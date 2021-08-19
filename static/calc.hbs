@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/calc" method="post">
+    <input type="number" name="first">
+    <select name="action">
+        {{#each actions}}
+        <option value="{{this}}">{{this}}</option>
+        {{/each}}
+    </select>
+    <input type="number" name="second">
+    <input type="submit" value="=">
+</form>
+</body>
+</html>
